@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" sizes="192x192" href="./assets/LogoA2.png">
+    <link rel="apple-touch-icon" href="./assets/LogoA2.png" type="image/jpeg">
+    <link rel="shortcut icon" href="./assets/LogoA2.png" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>A2 Transportes</title>
+</head>
+
+<body>
+    <header>
+        <div id="welcome">
+            <h4>Seja bem-vindo(a) Welcome</h4>
+        </div>
+        <a href="index.html" aria-label="Home">
+            <img id="home" src="./assets/LogoA2.png" alt="Logo-A2">
+        </a>
+
+        <section aria-details="Informações de contato" id="contact-info">
+            <h4>Atendimento</h4>
+            <h5>+55 (11) 5672-2044</h5>
+            <h4>Reclamações</h4>
+            <h5>0800-560-0244</h5>
+        </section>
+
+        <section aria-details="Horário de atendimento" id="opening-hours">
+            <h4>Horário de atendimento</h4>
+            <h5>Área administrativa</h5>
+            <h5>Segunda à Sexta 8h às 18h</h5>
+            <h5>Plantão, Monitoramento e Manutenção 24h</h5>
+        </section>
+
+        <address aria-details="Endereço">
+            <h4>Endereço</h4>
+            <h5>Estrada do Alvarenga, 999</h5>
+            <h5>Jardim Pedreira</h5>
+            <h5>CEP 04462-000</h5>
+        </address>
+    </header>
+
+    <nav class="nav" role="navigation">
+        <ul class="menu" id="menu">
+            <li><a class="link-menu" href="index.html">Home</a></li>
+            <li><a class="link-menu" href="servicos.html">Serviços</a></li>
+            <li><a class="link-menu" href="gestao.html">Gestão</a></li>
+            <li><a class="link-menu" href="nossa-gente.html">Nossa Gente</a></li>
+            <li><a class="link-menu" href="sustentabilidade.html">Sustentabilidade</a></li>
+            <li><a class="link-menu" href="transparencia.html">Transparência</a></li>
+            <li><a class="link-menu" href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+            <li><a class="link-menu" href="fale_conosco.html">Fale Conosco</a></li>
+        </ul>
+        <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+    </nav>
+
+    <main>
+        <container>
+            <img src="./assets/Banner_desfocado.png" alt="banner de onibus">
+        </container>
+        <section>
+            <h2>Fale Conosco</h2>
+            <p>A A2 Transportes mantém, há 10 anos, um compromisso com seus usuários. Prezamos pela
+                segurança e seriedade
+                nos nossos serviços, atendimento humanizado e respeito ao próximo, por isso, queremos ouvir você.</p>
+            <p>Sua opinião é muito importante para nós .Preencha os campos abaixo com seus dados e deixe
+                seu comentário.
+                Responderemos em breve. Este canal é um contato direto com você.</p>
+        </section>
+
+        <form>
+            <fieldset>
+                <div>
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required aria-required="true" autocomplete="off" class="file-text" >
+                </div>
+                <div>
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="text" name="email" id="email" required aria-required="true" autocomplete="off" class="file-text">
+                </div>
+                <div>
+                    <label for="telefone"><strong>Telefone</strong></label>
+                </div>
+                <div id="telefone">
+                    <label for="codigo">Código de área</label>
+                    <input type="number" name="DDD" id="area" required aria-required="true" autocomplete="off">
+                    <label for="numero">Número de telefone</label>
+                    <input type="number" name="telefone" id="numero" required aria-required="true" autocomplete="off">
+
+                </div>
+                <div>
+                    <label for="area"><strong>Área de interesse</strong></label>
+                    <input type="text" name="Área de Interesse" id="interesse" aria-required="false" autocomplete="off" class="file-text">
+                </div>
+
+                <div>
+                    <label for="mensagem"><strong>Mensagem</strong></label>
+                    <textarea rows="6" type="text" name="Mensagem" id="mensagem" aria-required="false"></textarea>
+                    <button type="submit" onsubmit="">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <h2>Localização</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.140167156722!2d-46.64321539136123!3d-23.706688078298907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4554c3e913ff%3A0x8eca39f67de937a5!2sA2%20transportes!5e0!3m2!1spt-BR!2sbr!4v1685393229654!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a aria-label="facebook"><img src="./assets/facebook.png" alt="Logo-Facebook" id="facebook"></a>
+            <a aria-label="instagram"><img src="./assets/instagram.png" alt="Logo-Instagram" id="instagram"></a>
+        </div>
+        <section aria-details="Informações de contato" id="contact-info">
+            <h4>Atendimento</h4>
+            <h5>+55 (11) 5672-2044</h5>
+            <h4>Reclamações</h4>
+            <h5>0800-560-0244</h5>
+        </section>
+
+        <section aria-details="Horário de atendimento" id="opening-hours">
+            <h4>Horário de atendimento</h4>
+            <h5>Área administrativa</h5>
+            <h5>Segunda à Sexta 8h às 18h</h5>
+            <h5>Plantão, Monitoramento e Manutenção 24h</h5>
+        </section>
+
+        <section aria-details="Endereço">
+            <h4>Endereço</h4>
+            <h5>Estrada do Alvarenga, 999</h5>
+            <h5>Jardim Pedreira</h5>
+            <h5>CEP 04462-000</h5>
+        </section>
+    </footer>
+
+
+</body>
+
+<script defer src="scripts.js"></script>
+
+</html>
